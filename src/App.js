@@ -1,11 +1,24 @@
-import Navbar from "./compo/Navbar";
+import Todo from "./Todo";
+import './App.css';
 
-function App() {
-  return (
+
+
+function App(){
+ 
+
+ 
+  return(
+    
   <div>
-
-<Navbar/>
+ <div className="app">
+<Todo/>
 </div>
+<div className="app">
+
+</div>
+
+  </div>
+ 
   );
 }
 
