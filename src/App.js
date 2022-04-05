@@ -13,9 +13,6 @@ function App(){
  <div className="app">
 <Todo/>
 </div>
-<div className="app">
-
-</div>
 
   </div>
  

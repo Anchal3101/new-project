@@ -1,8 +1,11 @@
+
+
 import React,{ useState } from 'react';
+
 import './Todo.css'
 import TodoAdd from './TodoAdd'
 
-function Todo(props){
+function Todo(){
 const [input, setInput]=  useState('');
 const [input1, setInput1]=  useState([]);
 
@@ -16,6 +19,7 @@ alert('enter')
     }else{
      setInput1([...input1,input]);
     console.log([...input1,input])
+    
 
         setInput('')
     }
@@ -28,10 +32,14 @@ alert('enter')
 <input onChange={(event)=>setInput(event.target.value)} value={input} placeholder='enter your data' className="todoinput"/>
 <span onClick={Click} className='button'>+</span>
 </div>
-
-        <TodoAdd Add={input} />
-
-
+<div>
+  <TodoAdd Add={input}/>
+</div>
+{
+    Add.map(ex=>{
+        <TodoAdd Add ={input}/>
+    })
+}
 </div>
 
     );
