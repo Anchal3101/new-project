@@ -3,19 +3,13 @@ import './App.css';
 
 
 
-function App(){
- 
-
- 
-  return(
-    
-  <div>
- <div className="app">
-<Todo/>
-</div>
-
-  </div>
- 
+function App() {
+  return (
+    <div>
+      <div className="app">
+        <Todo />
+      </div>
+    </div>
   );
 }
 
