@@ -1,9 +1,4 @@
-.maindiv{
-    background-color: rgb(182, 207, 199);
-    width: 600px;
-    display: flex; flex-direction:column;
-    text-align: center;
-}
+
 
 p{ 
     width: 600px; background-color: rgb(162, 162, 163);

@@ -4,10 +4,11 @@ import React from 'react';
 
 
 function TodoAdd(props){
+   const  {Add, deleteTodo, id} = props
 
    return(
         <div className='maindiv'>
-        <p>{props.Add}<a>X</a></p>
+        <p>{Add}<a onClick={() => deleteTodo(id)}>X</a></p>
      </div>
      );  }
 
