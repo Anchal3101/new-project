@@ -1,6 +1,6 @@
-import React,{ useState } from 'react';
-import './Todo.css'
-import TodoAdd from './TodoAdd'
+import React, { useState } from "react";
+import "./Todo.css";
+import TodoAdd from "./TodoAdd";
 
 function Todo() {
   const [input, setInput] = useState("");
@@ -10,9 +10,8 @@ function Todo() {
     if (!input) {
       alert("enter");
     } else {
-        const data=[...input1,input];
+      const data = [...input1, input];
       setInput1(data);
-
 
       console.log([...input1, input]);
 
@@ -21,9 +20,9 @@ function Todo() {
   };
 
   const deleteTodo = (id) => {
-      const data = input1.filter((item , idx) => id !== idx);
-      setInput1(data);
-  }
+    const data = input1.filter((item, idx) => id !== idx);
+    setInput1(data);
+  };
 
   return (
     <div className="todocontainer">
@@ -41,7 +40,9 @@ function Todo() {
       </div>
       <div>
         {input1.map((item, id) => {
-          return <TodoAdd key={item} id={id} deleteTodo={deleteTodo} Add={item} />;
+          return (
+            <TodoAdd key={item} id={id} deleteTodo={deleteTodo} Add={item} />
+          );
         })}
       </div>
     </div>
